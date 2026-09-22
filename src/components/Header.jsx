@@ -12,14 +12,14 @@ export default function Header() {
           </div>
         </div>
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 bg-clip-text text-transparent">
             A. Harsha Ganesh
           </h1>
-          <p className="mt-2 text-xl md:text-2xl text-blue-600 font-medium">
-            Hardware & PCB Design Engineer | Embedded Systems
+          <p className="mt-2 text-xl md:text-2xl text-slate-700 font-medium">
+            Hardware & PCB Design Engineer <span className="text-blue-400">|</span> Embedded Systems
           </p>
           
-          <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-4 text-slate-600 text-sm">
+          <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-5 text-slate-600 text-sm font-medium">
             <div className="flex items-center gap-1.5">
               <MapPin size={16} className="text-slate-400" />
               <span>Tirupati, Andhra Pradesh, India 517502</span>

@@ -39,9 +39,9 @@ export default function Skills() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {skills.map((skill, index) => (
-            <div key={index} className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div key={index} className="bg-white/90 backdrop-blur p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
-                <div className="text-slate-500 bg-slate-100 p-2 rounded-md">
+                <div className="text-blue-600 bg-blue-50 p-2 rounded-lg">
                   {skill.icon}
                 </div>
                 <h3 className="font-bold text-slate-900">{skill.category}</h3>

@@ -60,8 +60,8 @@ export default function Projects() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {categories.map((cat, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
-              <div className="h-48 bg-slate-200 flex items-center justify-center border-b border-slate-100">
+            <div key={index} className="bg-white/80 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col group">
+              <div className="h-48 bg-slate-100 flex items-center justify-center border-b border-slate-100 group-hover:bg-slate-200 transition-colors">
                 <div className="text-center text-slate-400">
                   <ImageIcon size={48} className="mx-auto mb-2 opacity-50" />
                   <span className="text-sm">Project Image Placeholder</span>

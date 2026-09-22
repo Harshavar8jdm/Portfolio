@@ -46,10 +46,10 @@ export default function Experience() {
               <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-blue-100 text-blue-600 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                 <Briefcase size={18} />
               </div>
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white/90 backdrop-blur p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                 <div className="flex flex-col md:flex-row md:items-start justify-between mb-2 gap-2">
                   <div>
-                    <h3 className="font-bold text-xl text-slate-900">{exp.role}</h3>
+                    <h3 className="font-bold text-xl text-slate-900 group-hover:text-blue-700 transition-colors">{exp.role}</h3>
                     <div className="text-blue-600 font-semibold">{exp.company}</div>
                   </div>
                 </div>
