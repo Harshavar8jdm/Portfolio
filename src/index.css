@@ -3,9 +3,45 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-slate-50 text-slate-900;
-    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
-    background-size: 24px 24px;
+  :root {
+    --bg-color: #f8fafc;
+    --text-color: #0f172a;
+    --grid-color: rgba(15, 23, 42, 0.05);
   }
+
+  .dark {
+    --bg-color: #0A1914; /* pcb.dark */
+    --text-color: #f8fafc;
+    --grid-color: rgba(255, 255, 255, 0.05);
+  }
+
+  body {
+    @apply bg-[var(--bg-color)] text-[var(--text-color)] antialiased transition-colors duration-300;
+    font-family: 'Inter', sans-serif;
+    background-image: 
+      linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center top;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+.pcb-trace {
+  position: relative;
+}
+
+.pcb-trace::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: theme('colors.pcb.trace');
+  z-index: -1;
+  opacity: 0.3;
 }
